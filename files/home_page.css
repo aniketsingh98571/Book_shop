@@ -1,25 +1,83 @@
 *{
-    margin: 0px;
-    padding: 0px;
-}
-h1,h5,h2 {
-    padding: 5px;
-}
-nav {
-    width: 100%;
-    border: 2px solid red;
+    margin: 0;
+    padding: 0;
 }
 
-.jumbotron{
-    margin-bottom: 0px;
-}
 
-/* @media (max-width:400){
-    .card {
-        width: 100%;
+.box-1{
+        display: flex;
+        justify-content: space-between;
+        border: 2px solid red;
+        flex-wrap: wrap;
     }
-} */
-img {
-   
-    border: 2px solid green;
-}
+    .Container{
+        border: 2px solid green;
+        text-align: center;
+       
+    }
+    @media(min-width:1200px) {
+        .box-1{
+            display: flex;
+            justify-content: space-around;
+            border: 2px solid red;
+    
+        }
+        .Container{
+            border: 2px solid green;
+        }
+    
+    }
+    @media(min-width:700px) {
+        .box-1{
+            display: flex;
+            justify-content: space-around;
+            border: 2px solid red;
+    
+        }
+        .Container{
+            border: 2px solid green;
+        }
+    
+    }
+    @media(max-width:800px) {
+        .box-1{
+            display: flex;
+            justify-content: space-around;
+            border: 2px solid red;
+            flex-direction: column;
+    
+        }
+        .Container img{
+            width: 100%;
+
+    
+        }
+        .Container{
+            border: 2px solid green;
+            width: 100%;
+        }
+    
+    }
+    @media(max-width:370px) {
+        .box-1{
+            display: flex;
+          margin-left: 0 auto;
+            border: 2px solid red;
+            flex-direction: column;
+            
+        }
+        .Container img{
+           
+
+    
+        }
+        .Container{
+            border: 2px solid green;
+          
+            
+           
+        }
+    
+    }
+
+
